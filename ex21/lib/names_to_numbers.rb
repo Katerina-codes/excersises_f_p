@@ -34,9 +34,8 @@ end
 
 print "Please enter a number of a month: "
 number = gets.chomp.to_i
-print "The name of the month is "
-print NumberConverter.new.convert(number)
-puts "."
+result = NumberConverter.new.convert(number)
+puts "The name of the month is #{result}."
 
 
 
