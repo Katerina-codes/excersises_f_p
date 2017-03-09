@@ -27,7 +27,7 @@ class NumberConverter
       when 12
         "December"
       else
-        "I don't understant that. Help!"
+        "I don't understand that. Help!"
     end
   end
 end
