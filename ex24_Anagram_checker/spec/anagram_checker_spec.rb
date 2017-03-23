@@ -12,4 +12,9 @@ describe AnagramChecker do
     expect(word_checker.check_if_anagram("baa", "aba")).to eq(true)
   end
 
+  it "tests that 'abc' and 'aba' return false" do
+    word_checker = AnagramChecker.new
+    expect(word_checker.check_if_anagram("abc", "aba")).to eq(false)
+  end
+
 end
