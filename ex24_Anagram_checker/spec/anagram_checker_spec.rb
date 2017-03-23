@@ -27,5 +27,4 @@ describe AnagramChecker do
     expect(word_checker.check_if_anagram("fish", "dog")).to eq(false)
   end
 
-
 end
