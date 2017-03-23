@@ -1,20 +1,24 @@
 class AnagramChecker
 
-  def check_if_anagram(string1, string2)  #("aaa", "aaa")
-    anagram_word = []
+  def check_if_anagram(string1, string2)
 
-    string2_array = string2.split("")     # ["a", "a", "a"]
-
-    string2_array.each do |letter|        # "a"
-      if string1.include?(letter)       # "aaa".include?("a")
-        anagram_word.push(letter)
-      else
-        false
-      end
+    if !check_word_length(string1, string2)
+      false
+    else
+      string1_array = string1.split("").sort
+      string2_array = string2.split("").sort
     end
-      if anagram_word.join == string1
-        true
-      end
+
+    if string1_array == string2_array
+      true
+    else
+      false
+    end
   end
+
+    def check_word_length(string1, string2)
+      string1.length == string2.length
+    end
+  
 
 end
