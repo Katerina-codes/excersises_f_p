@@ -17,4 +17,9 @@ describe AnagramChecker do
     expect(check_word.check_if_anagram("ab", "cd")).to eq(false)
   end
 
-end
+  it "tests that words 'tan', 'ant' return true" do
+    check_word = AnagramChecker.new
+    expect(check_word.check_if_anagram("tan", "ant")).to eq(true)
+  end
+
+ end
