@@ -37,4 +37,9 @@ end
     expect(paint_needed.get_gallons_needed(351)).to eq(2)
   end
 
+  it "returns 9 if area is 3000" do
+    paint_needed = PaintCalculator.new
+    expect(paint_needed.get_gallons_needed(3000)).to eq(9)
+  end
+
 end
