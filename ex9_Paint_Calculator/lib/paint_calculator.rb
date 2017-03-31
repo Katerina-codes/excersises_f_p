@@ -5,11 +5,15 @@ class PaintCalculator
   end
 
   def get_gallons_needed(area)
+  gallons_needed = (area / 350.to_f).ceil
+
     if area == 0
       0
-    else
+    elsif area < 350
       1
-    end  
+    else
+      gallons_needed
+    end
   end
 
 end
