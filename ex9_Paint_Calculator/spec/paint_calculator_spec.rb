@@ -27,4 +27,9 @@ end
     expect(paint_needed.get_gallons_needed(1)).to eq(1)
     end
 
+  it "returns 1 if area is 2" do
+    paint_needed =  PaintCalculator.new
+    expect(paint_needed.get_gallons_needed(2)).to eq(1)
+  end
+
 end
