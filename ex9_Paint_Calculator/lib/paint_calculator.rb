@@ -1,11 +1,13 @@
 class PaintCalculator
 
   def get_ceiling_area(length, width)
-    if length == 0
+    if width == 0
       0
-    else
+    elsif width == 1
       1
-    end  
+    else
+      2
+    end
   end
 
 end

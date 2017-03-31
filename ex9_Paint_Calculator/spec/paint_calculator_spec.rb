@@ -12,4 +12,9 @@ describe PaintCalculator do
     expect(paint_needed.get_ceiling_area(1, 1)).to eq(1)
   end
 
+  it "returns 2 if length multiplied by width is 2" do
+    paint_needed = PaintCalculator.new
+    expect(paint_needed.get_ceiling_area(1, 2)).to eq(2)
+  end
+
 end
