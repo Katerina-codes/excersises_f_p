@@ -5,7 +5,11 @@ class PaintCalculator
   end
 
   def get_gallons_needed(area)
-    0
+    if area == 0
+      0
+    else
+      1
+    end  
   end
 
 end
