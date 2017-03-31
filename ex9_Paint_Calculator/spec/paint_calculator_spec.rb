@@ -17,4 +17,9 @@ describe PaintCalculator do
     expect(paint_needed.get_ceiling_area(1, 2)).to eq(2)
   end
 
+  it "returns 0 if area is 0" do
+  paint_needed = PaintCalculator.new
+  expect(paint_needed.get_gallons_needed(0)).to eq(0)
+end
+
 end
