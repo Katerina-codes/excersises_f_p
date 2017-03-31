@@ -18,14 +18,14 @@ describe PaintCalculator do
   end
 
   it "returns 0 if area is 0" do
-  paint_needed = PaintCalculator.new
-  expect(paint_needed.get_gallons_needed(0)).to eq(0)
-end
+    paint_needed = PaintCalculator.new
+    expect(paint_needed.get_gallons_needed(0)).to eq(0)
+  end
 
   it "returns 1 if area is 1" do
     paint_needed = PaintCalculator.new
     expect(paint_needed.get_gallons_needed(1)).to eq(1)
-    end
+  end
 
   it "returns 1 if area is 2" do
     paint_needed =  PaintCalculator.new
