@@ -22,7 +22,7 @@ class PaintCalculator
       area < 350
       1
     else
-      gallons_needed
+      puts "You will need to purchase #{gallons_needed} gallons of paint to cover #{area} square feet."
     end
   end
 
