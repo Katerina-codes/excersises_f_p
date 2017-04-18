@@ -1,0 +1,4 @@
+Make a program that generates a multiplication table for numbers 0 - 12
+Create a range for numbers 0 - 12.
+Multiple each number by 0 up until 12.
+Finish when 12 has been multiplied byitself of when the nultiplication is 144. 
