@@ -12,4 +12,9 @@ describe MultiplicationTable do
 		expect(multiplication_table.multiply(1, 1)).to eq(1)
 	end
 
+	it "returns 2 if 1 * 2" do
+		multiplication_table = MultiplicationTable.new
+		expect(multiplication_table.multiply(1, 2)).to eq(2)
+	end
+
 end
